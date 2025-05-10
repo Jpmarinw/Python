@@ -1,7 +1,11 @@
-from run import add2
+from run import divisao, informacoes
 
-def test_add2():
-    val = 5
-    response = add2(val)
-    print(response)
+def test_divisao():
+    assert divisao(50) == 25.0
+    assert isinstance(divisao(50), float)
 
+def test_informacoes():
+    resp = informacoes()
+    assert "name" in resp
+    assert "height" not in resp
+    assert "João Pedro" in resp["name"]
