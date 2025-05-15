@@ -7,3 +7,6 @@ def informacoes() -> dict:
         "name": "João Pedro",
         "age": 24
     }
+
+def func_de_erro():
+    raise Exception("Algo deu errado")
